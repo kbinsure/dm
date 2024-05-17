@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horizontal Slide Show</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <style>
+        .bx-wrapper img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="slider">
+        <ul class="bxslider">
+            <li><img src="https://live.staticflickr.com/65535/53723736942_7092581778_b.jpg%22%20class=%22zoom-small%22%3E" alt="Image 1"></li>
+            <li><img src="https://live.staticflickr.com/65535/53724849353_205e67e478_b.jpg%22%20class=%22zoom-small%22" alt="Image 2"></li>
+            <li><img src="https://live.staticflickr.com/65535/53725073220_27a94b1385_b.jpg%22%20class=%22zoom-small%22" alt="Image 3"></li>
+            <li><img src="https://live.staticflickr.com/65535/53724981424_96a9fb98d6_b.jpg%22%20class=%22zoom-small%22" alt="Image 4"></li>
+            <li><img src="https://live.staticflickr.com/65535/53724981434_c5904b6a64_b.jpg%22%20class=%22zoom-small%22" alt="Image 5"></li>
+            <li><img src="https://live.staticflickr.com/65535/53724849318_7f7a38322b_b.jpg%22%20class=%22zoom-small%22" alt="Image 6"></li>
+            <li><img src="https://live.staticflickr.com/65535/53725073205_41c36f182c_b.jpg%22%20class=%22zoom-small%22" alt="Image 7"></li>
+        </ul>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.bxslider').bxSlider({
+                auto: true,
+                pause: 3000,
+                mode: 'horizontal',
+                captions: true,
+                slideWidth: 600,
+            });
+        });
+    </script>
+</body>
+</html>
